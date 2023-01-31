@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+* {
+  /* box-sizing: border-box; */
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  padding: 0;
+}
+
+body::after {
+  content: "";
+  background-image: url("./assets/background.jpg");
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 420px;
+  gap: 5px;
+  border-radius: 40px;
+  margin-top: 15vh;
+  background-color: white;
+  padding: 40px;
+}
+
+form h1 {
+  text-align: center;
+  font-size: 28px;
+}
+
+form input {
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 14px;
+}
+
+form button {
+  align-self: center;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 20px;
+  width: fit-content;
+  padding: 5px 20px;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+form button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.errorMsg {
+  color: red;
+  text-align: center;
+  font-size: 14px;
+}
+
+.successMsg {
+  color: green;
+  text-align: center;
+  font-size: 14px;
+}
