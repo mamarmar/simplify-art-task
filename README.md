@@ -1,5 +1,5 @@
 ## How to start the app
 ### Client 
-`yarn start`
+`cd client` => `yarn install` => `yarn start`
 ### Server
-`yarn dev` ([Nodemon](https://www.npmjs.com/package/nodemon) needs to be installed)
+`cd server` => `yarn install` => `yarn dev` ([Nodemon](https://www.npmjs.com/package/nodemon) needs to be installed)
